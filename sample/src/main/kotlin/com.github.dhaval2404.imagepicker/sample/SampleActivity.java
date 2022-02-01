@@ -1,4 +1,4 @@
-package com.github.dhaval2404.imagepicker.sample;
+package com.github.shohboz.imagepicker.sample;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -19,12 +19,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 
-import com.github.dhaval2404.imagepicker.ImagePicker;
-import com.github.dhaval2404.imagepicker.constant.ImageProvider;
-import com.github.dhaval2404.imagepicker.listener.DismissListener;
-import com.github.dhaval2404.imagepicker.sample.util.FileUtil;
-import com.github.dhaval2404.imagepicker.sample.util.IntentUtil;
-import com.github.dhaval2404.imagepicker.util.IntentUtils;
+import com.github.shohboz.imagepicker.ImagePicker;
+import com.github.shohboz.imagepicker.constant.ImageProvider;
+import com.github.shohboz.imagepicker.listener.DismissListener;
+import com.github.shohboz.imagepicker.sample.util.FileUtil;
+import com.github.shohboz.imagepicker.sample.util.IntentUtil;
+import com.github.shohboz.imagepicker.util.IntentUtils;
 
 import java.io.File;
 

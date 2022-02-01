@@ -1,60 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:baselineAligned="false"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:padding="16dp">
 
-    <LinearLayout
-        android:id="@+id/lytCameraPick"
-        android:layout_width="0dp"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            app:srcCompat="@drawable/ic_photo_camera_black_48dp"
-            app:tint="@color/dialog_choose_icon_color" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="@string/title_camera"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="@color/dialog_choose_text_color" />
-
-    </LinearLayout>
+        android:layout_gravity="center"
+        android:layout_marginVertical="24dp"
+        android:layout_marginEnd="6dp"
+        android:text="@string/title_choose_image_provider"
+        android:textAllCaps="true"
+        android:textColor="#081A50"
+        android:textSize="17sp"
+        android:textStyle="bold" />
 
     <LinearLayout
-        android:id="@+id/lytGalleryPick"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            app:srcCompat="@drawable/ic_photo_black_48dp"
-            app:tint="@color/dialog_choose_icon_color" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/lytCameraPick"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="@string/title_gallery"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="@color/dialog_choose_text_color" />
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:background="#F3F7FA"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
 
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_camera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/title_camera"
+                android:textAllCaps="true"
+                android:textColor="#081A50"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytGalleryPick"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#F3F7FA"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_gallery" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/title_gallery"
+                android:textAllCaps="true"
+                android:textColor="#081A50"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:padding="10dp"
+        android:layout_marginVertical="24dp"
+        android:layout_marginEnd="6dp"
+        android:text="@string/action_cancel"
+        android:textAllCaps="true"
+        android:textColor="#4361EE"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
 </LinearLayout>

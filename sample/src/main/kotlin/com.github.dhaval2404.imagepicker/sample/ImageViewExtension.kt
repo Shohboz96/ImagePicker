@@ -1,4 +1,4 @@
-package com.github.dhaval2404.imagepicker.sample
+package com.github.shohboz.imagepicker.sample
 
 import android.net.Uri
 import android.widget.ImageView

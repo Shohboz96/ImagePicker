@@ -9,7 +9,7 @@ apply from: "../ktlint.gradle"
 android {
     compileSdkVersion 30
     defaultConfig {
-        applicationId "com.github.dhaval2404.imagepicker.sample"
+        applicationId "com.github.shohboz.imagepicker.sample"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 16
