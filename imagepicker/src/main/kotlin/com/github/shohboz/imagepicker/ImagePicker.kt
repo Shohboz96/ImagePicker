@@ -79,6 +79,7 @@ open class ImagePicker {
 
         // Image Provider
         private var imageProvider = ImageProvider.BOTH
+        private var resId:Int = R.layout.dialog_choose_app
 
         // Mime types restrictions for gallery. by default all mime types are valid
         private var mimeTypes: Array<String> = emptyArray()
@@ -129,6 +130,10 @@ open class ImagePicker {
          */
         fun provider(imageProvider: ImageProvider): Builder {
             this.imageProvider = imageProvider
+            return this
+        }
+        fun setLayout(resId:Int): Builder{
+            this.resId = resId
             return this
         }
 
@@ -272,7 +277,7 @@ open class ImagePicker {
         fun start(reqCode: Int) {
             if (imageProvider == ImageProvider.BOTH) {
                 // Pick Image Provider if not specified
-                showImageProviderDialog(reqCode)
+                showImageProviderDialog(reqCode,resId)
             } else {
                 startActivity(reqCode)
             }
@@ -305,7 +310,7 @@ open class ImagePicker {
                             }
                         }
                     },
-                    dismissListener
+                    dismissListener,resId
                 )
             } else {
                 onResult(createIntent())
@@ -315,7 +320,7 @@ open class ImagePicker {
         /**
          * Pick Image Provider if not specified
          */
-        private fun showImageProviderDialog(reqCode: Int) {
+        private fun showImageProviderDialog(reqCode: Int,resId: Int) {
             DialogHelper.showChooseAppDialog(
                 activity,
                 object : ResultListener<ImageProvider> {
@@ -327,7 +332,7 @@ open class ImagePicker {
                         }
                     }
                 },
-                dismissListener
+                dismissListener,resId
             )
         }
 
