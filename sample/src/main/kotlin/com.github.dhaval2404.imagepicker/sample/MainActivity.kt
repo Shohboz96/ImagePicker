@@ -14,7 +14,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.github.shohboz.imagepicker.ImagePicker
-import com.github.shohboz.imagepicker.sample.util.FileUtil
+import com.github.dhaval2404.imagepicker.sample.util.FileUtil
 import com.github.shohboz.imagepicker.sample.util.IntentUtil
 import com.github.shohboz.imagepicker.util.IntentUtils
 import kotlinx.android.synthetic.main.activity_main.*

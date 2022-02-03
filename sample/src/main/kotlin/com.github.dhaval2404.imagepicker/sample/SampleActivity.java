@@ -22,7 +22,7 @@ import androidx.appcompat.widget.Toolbar;
 import com.github.shohboz.imagepicker.ImagePicker;
 import com.github.shohboz.imagepicker.constant.ImageProvider;
 import com.github.shohboz.imagepicker.listener.DismissListener;
-import com.github.shohboz.imagepicker.sample.util.FileUtil;
+import com.github.dhaval2404.imagepicker.sample.util.FileUtil;
 import com.github.shohboz.imagepicker.sample.util.IntentUtil;
 import com.github.shohboz.imagepicker.util.IntentUtils;
 
